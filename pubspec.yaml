@@ -6,11 +6,11 @@ repository: https://github.com/thingsboard/dart_thingsboard_client.git
 issue_tracker: https://github.com/thingsboard/dart_thingsboard_client/issues
 
 environment:
-  sdk: '>=2.12.0 <3.0.0'
+  sdk: '^3.0.0'
 
 dependencies:
   collection: ^1.16.0
-  dio: ^4.0.6
+  dio: ^5.0.0
   jwt_decoder: ^2.0.1
   web_socket_channel: ^2.2.0
 
