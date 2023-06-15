@@ -3,7 +3,7 @@ import 'id/rule_chain_id.dart';
 import 'id/rule_node_id.dart';
 import 'additional_info_based.dart';
 
-class RuleNode extends AdditionalInfoBased<RuleNodeId> with HasName {
+class RuleNode extends AdditionalInfoBased<RuleNodeId> {
   RuleChainId? ruleChainId;
   String type;
   String name;

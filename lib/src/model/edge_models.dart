@@ -10,8 +10,7 @@ import 'additional_info_based.dart';
 import 'id/rule_chain_id.dart';
 import 'id/tenant_id.dart';
 
-class Edge extends AdditionalInfoBased<EdgeId>
-    with HasName, HasTenantId, HasCustomerId {
+class Edge extends AdditionalInfoBased<EdgeId> {
   TenantId? tenantId;
   CustomerId? customerId;
   RuleChainId? rootRuleChainId;

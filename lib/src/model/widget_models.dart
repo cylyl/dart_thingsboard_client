@@ -5,7 +5,7 @@ import 'has_tenant_id.dart';
 import 'id/tenant_id.dart';
 import 'id/widget_type_id.dart';
 
-class BaseWidgetType extends BaseData<WidgetTypeId> with HasTenantId {
+class BaseWidgetType extends BaseData<WidgetTypeId> {
   TenantId? tenantId;
   String name;
   String bundleAlias;

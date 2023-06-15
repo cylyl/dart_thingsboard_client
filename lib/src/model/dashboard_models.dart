@@ -8,7 +8,7 @@ import 'has_name.dart';
 import 'has_tenant_id.dart';
 import 'id/dashboard_id.dart';
 
-class DashboardInfo extends BaseData<DashboardId> with HasName, HasTenantId {
+class DashboardInfo extends BaseData<DashboardId> {
   TenantId? tenantId;
   String title;
   String? image;
@@ -73,7 +73,7 @@ class DashboardInfo extends BaseData<DashboardId> with HasName, HasTenantId {
   }
 }
 
-class Dashboard extends DashboardInfo with ExportableEntity<DashboardId> {
+class Dashboard extends DashboardInfo {
   Map<String, dynamic> configuration;
   DashboardId? externalId;
 

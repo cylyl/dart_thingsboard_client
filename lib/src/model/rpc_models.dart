@@ -17,7 +17,7 @@ extension RpcStatusToString on RpcStatus {
   }
 }
 
-class Rpc extends BaseData<RpcId> with HasTenantId {
+class Rpc extends BaseData<RpcId> {
   TenantId tenantId;
   DeviceId deviceId;
   int expirationTime;

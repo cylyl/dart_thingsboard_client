@@ -47,7 +47,7 @@ extension AlarmSearchStatusToString on AlarmSearchStatus {
   }
 }
 
-class Alarm extends BaseData<AlarmId> with HasName, HasTenantId {
+class Alarm extends BaseData<AlarmId> {
   TenantId tenantId;
   CustomerId? customerId;
   String type;

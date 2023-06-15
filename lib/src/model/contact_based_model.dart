@@ -3,7 +3,7 @@ import 'has_name.dart';
 import 'id/has_uuid.dart';
 
 abstract class ContactBased<T extends HasUuid> extends AdditionalInfoBased<T>
-    with HasName {
+    {
   String? country;
   String? state;
   String? city;

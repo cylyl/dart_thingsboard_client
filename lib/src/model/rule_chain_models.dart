@@ -20,8 +20,7 @@ extension RuleChainTypeToString on RuleChainType {
   }
 }
 
-class RuleChain extends AdditionalInfoBased<RuleChainId>
-    with HasName, HasTenantId, ExportableEntity<RuleChainId> {
+class RuleChain extends AdditionalInfoBased<RuleChainId> {
   TenantId? tenantId;
   String name;
   RuleChainType type;

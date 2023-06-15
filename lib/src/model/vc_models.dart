@@ -662,7 +662,7 @@ class EntityExportData<E extends ExportableEntity<EntityId>> {
   }
 }
 
-class DeviceExportData extends EntityExportData<Device> {
+class DeviceExportData extends EntityExportData {
   DeviceCredentials? credentials;
 
   DeviceExportData.fromJson(Map<String, dynamic> json)
@@ -677,7 +677,7 @@ class DeviceExportData extends EntityExportData<Device> {
   }
 }
 
-class RuleChainExportData extends EntityExportData<RuleChain> {
+class RuleChainExportData extends EntityExportData {
   RuleChainMetaData? metaData;
 
   RuleChainExportData.fromJson(Map<String, dynamic> json)

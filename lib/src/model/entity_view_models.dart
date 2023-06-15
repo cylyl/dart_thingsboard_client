@@ -53,8 +53,7 @@ class TelemetryEntityView {
   }
 }
 
-class EntityView extends AdditionalInfoBased<EntityViewId>
-    with HasName, HasTenantId, HasCustomerId, ExportableEntity<EntityViewId> {
+class EntityView extends AdditionalInfoBased<EntityViewId> {
   TenantId? tenantId;
   CustomerId? customerId;
   EntityId entityId;

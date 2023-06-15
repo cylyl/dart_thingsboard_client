@@ -5,8 +5,7 @@ import 'id/customer_id.dart';
 import 'id/tenant_id.dart';
 import 'contact_based_model.dart';
 
-class Customer extends ContactBased<CustomerId>
-    with HasTenantId, HasCustomerId, ExportableEntity<CustomerId> {
+class Customer extends ContactBased<CustomerId> {
   TenantId? tenantId;
   String title;
   CustomerId? externalId;

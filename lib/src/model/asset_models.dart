@@ -17,12 +17,7 @@ import 'id/asset_id.dart';
 import 'id/customer_id.dart';
 import 'id/tenant_id.dart';
 
-class AssetProfile extends BaseData<AssetProfileId>
-    with
-        HasName,
-        HasTenantId,
-        HasRuleEngineProfile,
-        ExportableEntity<AssetProfileId> {
+class AssetProfile extends BaseData<AssetProfileId> {
   TenantId? tenantId;
   String name;
   String? description;
@@ -164,8 +159,7 @@ class AssetProfileInfo extends EntityInfo {
   }
 }
 
-class Asset extends AdditionalInfoBased<AssetId>
-    with HasName, HasTenantId, HasCustomerId, ExportableEntity<AssetId> {
+class Asset extends AdditionalInfoBased<AssetId> {
   TenantId? tenantId;
   CustomerId? customerId;
   String name;

@@ -116,7 +116,7 @@ class ProcessingStrategy {
   }
 }
 
-class Queue extends AdditionalInfoBased<QueueId> with HasName, HasTenantId {
+class Queue extends AdditionalInfoBased<QueueId> {
   TenantId? tenantId;
   String name;
   String topic;

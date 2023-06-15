@@ -19,7 +19,7 @@ extension ResourceTypeToString on ResourceType {
   }
 }
 
-class TbResourceInfo extends BaseData<TbResourceId> with HasName, HasTenantId {
+class TbResourceInfo extends BaseData<TbResourceId> {
   TenantId? tenantId;
   String title;
   ResourceType resourceType;

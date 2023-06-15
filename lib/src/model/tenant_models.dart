@@ -304,7 +304,7 @@ class TenantProfileData {
   }
 }
 
-class TenantProfile extends BaseData<TenantProfileId> with HasName {
+class TenantProfile extends BaseData<TenantProfileId> {
   String name;
   String? description;
   bool? isDefault;
@@ -351,7 +351,7 @@ class TenantProfile extends BaseData<TenantProfileId> with HasName {
   }
 }
 
-class Tenant extends ContactBased<TenantId> with HasTenantId {
+class Tenant extends ContactBased<TenantId> {
   String title;
   String? region;
   TenantProfileId? tenantProfileId;

@@ -61,8 +61,7 @@ class AuthUser {
   }
 }
 
-class User extends AdditionalInfoBased<UserId>
-    with HasName, HasTenantId, HasCustomerId {
+class User extends AdditionalInfoBased<UserId> {
   TenantId? tenantId;
   CustomerId? customerId;
   String email;

@@ -3,8 +3,7 @@ import 'has_additional_info.dart';
 import 'base_data.dart';
 import 'id/has_uuid.dart';
 
-abstract class AdditionalInfoBased<T extends HasUuid> extends BaseData<T>
-    with HasAdditionalInfo {
+abstract class AdditionalInfoBased<T extends HasUuid> extends BaseData<T> {
   Map<String, dynamic>? additionalInfo;
 
   AdditionalInfoBased();

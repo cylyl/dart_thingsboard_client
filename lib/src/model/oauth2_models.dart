@@ -197,8 +197,7 @@ class OAuth2MapperConfig {
 }
 
 class OAuth2ClientRegistrationTemplate
-    extends AdditionalInfoBased<OAuth2ClientRegistrationTemplateId>
-    with HasName {
+    extends AdditionalInfoBased<OAuth2ClientRegistrationTemplateId> {
   String providerId;
   OAuth2MapperConfig mapperConfig;
   String authorizationUri;

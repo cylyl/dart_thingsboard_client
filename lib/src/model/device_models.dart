@@ -372,13 +372,7 @@ class DeviceProfileData {
   }
 }
 
-class DeviceProfile extends BaseData<DeviceProfileId>
-    with
-        HasName,
-        HasTenantId,
-        HasOtaPackage,
-        HasRuleEngineProfile,
-        ExportableEntity<DeviceProfileId> {
+class DeviceProfile extends BaseData<DeviceProfileId> {
   TenantId? tenantId;
   String name;
   String? description;
@@ -782,13 +776,7 @@ class DeviceData {
   }
 }
 
-class Device extends AdditionalInfoBased<DeviceId>
-    with
-        HasName,
-        HasTenantId,
-        HasCustomerId,
-        HasOtaPackage,
-        ExportableEntity<DeviceId> {
+class Device extends AdditionalInfoBased<DeviceId> {
   TenantId? tenantId;
   CustomerId? customerId;
   String name;

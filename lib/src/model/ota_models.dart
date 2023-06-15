@@ -41,8 +41,7 @@ extension ChecksumAlgorithmToString on ChecksumAlgorithm {
   }
 }
 
-class OtaPackageInfo extends AdditionalInfoBased<OtaPackageId>
-    with HasName, HasTenantId {
+class OtaPackageInfo extends AdditionalInfoBased<OtaPackageId> {
   TenantId? tenantId;
   DeviceProfileId deviceProfileId;
   OtaPackageType type;

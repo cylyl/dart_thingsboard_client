@@ -6,8 +6,7 @@ import 'has_tenant_id.dart';
 import 'id/tenant_id.dart';
 import 'id/widgets_bundle_id.dart';
 
-class WidgetsBundle extends BaseData<WidgetsBundleId>
-    with HasTenantId, ExportableEntity<WidgetsBundleId> {
+class WidgetsBundle extends BaseData<WidgetsBundleId> {
   TenantId? tenantId;
   String? alias;
   String title;
